@@ -365,6 +365,6 @@ If you need direct support you can contact us at [info@bridgecrew.io](mailto:inf
 | 115 | CKV_AZURE_30 | /azure/sql.tf             | azurerm_postgresql_configuration.example             | Ensure server parameter 'log_checkpoints' is set to 'ON' for PostgreSQL Database Server                                                                                                                  | https://docs.bridgecrew.io/docs/bc_azr_networking_11                                         |
 
 
----
+------
 
 
