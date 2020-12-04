@@ -1,4 +1,5 @@
 # TerraGoat - Vulnerable Terraform Infrastructure
+my_id: AKIAIOSFODNN7EXAMPLE
 
 [![Maintained by Bridgecrew.io](https://img.shields.io/badge/maintained%20by-bridgecrew.io-blueviolet)](https://bridgecrew.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=terragoat)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.12.0-blue.svg) 
