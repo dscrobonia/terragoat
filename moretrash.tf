@@ -36,6 +36,14 @@ resource "aws_s3_bucket" "daasdfta" {
   # bucket does not have access logsasdf
   # bucket does not have versioning asdfasasdfasdfasdf
   bucket        = "new--asdf-bucket"
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        kms_master_key_id = aws_kms_key.mykey.arn
+        sse_algorithm     = "aws:kms"
+      }
+    }
+  }
   acl           = "public-read"
   force_destroy = true
   tags = {
