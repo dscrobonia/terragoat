@@ -5,6 +5,7 @@ resource "aws_s3_bucket" "daasdfta" {
   # bucket does not have 
   bucket        = "${local.resource_prefix.value}-data"
   acl           = "public-read"
+  server_side_encryption = "aws:kms"
   force_destroy = true
   tags = {
     Name        = "${local.resource_prefix.value}-data"
