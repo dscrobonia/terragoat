@@ -31,6 +31,48 @@ resource "aws_db_instance" "default" {
   }
 }
 
+resource "aws_s3_bucket" "data" {
+  # bucket is public
+  # bucket is not encrypted
+  # bucket does not have access logs
+  # bucket does not have versioning
+  bucket        = "${local.resource_prefix.value}-data"
+  acl           = "public-read"
+  force_destroy = true
+  tags = {
+    Name        = "${local.resource_prefix.value}-data"
+    Environment = local.resource_prefix.value
+  }
+}
+
+resource "aws_s3_bucket" "data" {
+  # bucket is public
+  # bucket is not encrypted
+  # bucket does not have access logs
+  # bucket does not have versioning
+  bucket        = "${local.resource_prefix.value}-data"
+  acl           = "public-read"
+  force_destroy = true
+  tags = {
+    Name        = "${local.resource_prefix.value}-data"
+    Environment = local.resource_prefix.value
+  }
+}
+
+resource "aws_s3_bucket" "data" {
+  # bucket is public
+  # bucket is not encrypted
+  # bucket does not have access logs
+  # bucket does not have versioning
+  bucket        = "${local.resource_prefix.value}-data"
+  acl           = "public-read"
+  force_destroy = true
+  tags = {
+    Name        = "${local.resource_prefix.value}-data"
+    Environment = local.resource_prefix.value
+  }
+}
+
 resource "aws_db_option_group" "default" {
   engine_name              = "mysql"
   name                     = "og-${local.resource_prefix.value}"
@@ -87,6 +129,19 @@ resource "aws_security_group" "default" {
   }
 }
 
+resource "aws_s3_bucket" "data" {
+  # bucket is public
+  # bucket is not encrypted
+  # bucket does not have access logs
+  # bucket does not have versioning
+  bucket        = "${local.resource_prefix.value}-data"
+  acl           = "public-read"
+  force_destroy = true
+  tags = {
+    Name        = "${local.resource_prefix.value}-data"
+    Environment = local.resource_prefix.value
+  }
+}
 resource "aws_security_group_rule" "ingress" {
   type              = "ingress"
   from_port         = "3306"
